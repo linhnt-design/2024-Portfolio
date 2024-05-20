@@ -160,7 +160,7 @@ body{
 .grid{
     height: 36vh;
     padding: 40px 0;
-    background: url(img/soigao/grid logo-06.png) center;
+    background: url(img/soigao/grid\ logo-06.png) center;
     background-size: 50%;
     background-repeat: no-repeat;
 }
