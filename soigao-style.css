@@ -1,0 +1,241 @@
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#navbar{
+    z-index: 1;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #ffefe3 !important;
+}
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    width: 100%;
+    top: -1vmin;
+    transform: translateZ(0.5px) scale(0.5);
+}
+
+.text::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(/img/soigao/boxes.png) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(1) translate(10px,20px);
+}
+
+.text img{
+    width: 100%;
+}
+
+.section1::before{
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background: url(/img/soigao/base.png) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2,1.8) translateY(-8px);
+}
+
+.section1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(/img/soigao/elements.png) center -40px no-repeat;
+    background-size: cover;
+}
+
+.section3 {
+    width: 100%;
+    padding: 30px 0;
+    position: absolute;
+    background-color: #ffefe3;
+}
+
+.section3, .row h3{
+    font-family: "Truculenta", sans-serif;
+    text-align: justify;
+    line-height: 25pt;
+    font-weight: 200;
+    color: #043a2d;
+}
+
+.section3, .row h2{
+    font-family: "Truculenta", sans-serif;
+    font-weight: bold;
+    color: #043a2d;
+    padding-bottom: 20px;
+}
+
+.section2 .eng-text, .section2 .viet-text, .row.intro .eng-text, .row.intro .viet-text{
+    padding: 20px 20%;
+    margin: auto;
+}
+
+.viet-text h3{
+    font-weight: 200;
+    color: #bc0a6c;
+}
+
+.section3 .logo{
+    width: 80%;
+    margin: auto;
+}
+
+.logo img{
+    width: 100%;
+    animation: zoomshow both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+.section3 .row{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    animation: reveal ease-out both;
+    animation-timeline: view();
+    animation-range: cover 10% cover 30%;
+}
+
+.row.image .col-6{
+    padding-top: 0;
+}
+
+.row.image .col-6.right .row.top{
+    width: 100%;
+    padding: 0;
+}
+
+.col-6.right .row.top img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.row.image .col-6.right .row.bot{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.col-6.right .row.bot img{
+    padding: 0;
+}
+
+.col-6 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.structure{
+    height: 36vh;
+    padding: 40px 0;
+    background: url(/img/soigao/structure-06.png) center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.grid{
+    height: 36vh;
+    padding: 40px 0;
+    background: url(/img/soigao/grid\ logo-06.png) center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.row.stationery .col-6.idcard img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.row .col-12.layout img{
+    width: 100%;
+    object-fit: cover;
+    padding-top: 20px;
+    animation: zoomshow both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+.row.pattern{
+    width: 40%;
+}
+
+.row.items{
+    animation-range: entry 5% cover 10%;
+}
+
+.row.pattern .carousel-inner{
+    height: 40vh;
+}
+
+.row.pattern .carousel.slide .carousel-inner img{
+    height: 100%;
+}
+
+.carousel-item{
+    transition: transform 0s ease !important;
+}
+
+.col-6.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-6{
+    padding-top: 20px;
+}
+
+@keyframes reveal {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  
+    from{
+      transform: translateX(300px);
+    }
+  
+    to{
+      transform: translateX(0);
+    }
+  }
+
+@keyframes zoomshow {
+    0%{
+        opacity: 0;
+        clip-path: inset(70% 40% 70% 40%);
+    }
+    
+    100%{
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+

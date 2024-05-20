@@ -1,0 +1,40 @@
+
+.intro-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.intro-heading{
+    width: 100%;
+    margin: auto;
+    padding: 26vh 0 1vh 0;
+}
+
+.intro-heading h1{
+    color: var(--blue-dark--);
+}
+
+.intro-sentence{
+    width: 45%;
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.intro-sentence h3{
+    color: var(--blue-dark--);
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
+
+}
+
+.icon-btn{
+    margin: auto;
+    width: fit-content;
+    padding-top: 15vh;
+}
+
