@@ -3,9 +3,6 @@ html{
     overflow: hidden;
 }
 
-#navbar{
-    z-index: 1;
-}
 
 body{
     margin: 0;
@@ -17,6 +14,15 @@ body{
     overflow-y: scroll;
     background-color: #ffefe3 !important;
 }
+
+#navbar{
+    background-color: rgba(189, 10, 108, 80%)!important;
+}
+
+.nav-link.active h3{
+    color: #f4bc91 !important;
+}
+
 
 .section1{
     width: 100%;
@@ -94,7 +100,7 @@ body{
 
 .viet-text h3{
     font-weight: 200;
-    color: #bc0a6c;
+    color: rgb(189, 10, 108)
 }
 
 .section3 .logo{

@@ -1,0 +1,135 @@
+body{
+    background-color: #f9dce4 !important;
+    overflow-y: scroll !important;
+}
+
+#navbar{
+    background-color: rgba(178, 0, 59, 80%) !important;
+}
+
+.nav-link.active h3{
+    color: #f4a2b0 !important;
+}
+
+.banner{
+    width: 100vw;
+    height: 86vh;
+    background-image: url(img/nhon/cookiebox-dark.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .banner-text{
+    width: 20%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding-top: 35vh;
+}
+
+.section{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+}
+
+.section .col-6 img{
+    width: 100%;
+}
+
+.section .col-6.left .redgirl{
+    padding: 60px 0;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.col-6.right .intro-text{
+    width: 90%;
+    margin: auto;
+    padding: 40% 6%;
+}
+
+.intro-text .eng-text, .viet-text{
+    padding: 20px 0;
+}
+
+.intro-text .eng-text h2{
+    padding: 20px 0 40px 0;
+    font-family: "Playfair Display", serif !important;
+    color: #b2003b !important;
+    font-style: italic;
+
+}
+
+.eng-text h3, .viet-text h3{
+    text-align: justify;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 1.4vmin !important;
+    line-height: 30px;
+}
+
+.eng-text h3{
+    font-style: italic;
+    color: #b2003b;
+}
+
+.marquee{
+    background-color: #b2003b;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    display: flex;
+    gap: 1rem;
+    padding: 20px 0;
+}
+
+.marquee .marquee-content{
+    flex-shrink: 0;
+    display: flex !important;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1rem;
+}
+
+.marquee h2{
+    font-family: "Playfair Display", serif !important;
+    color: #f4a2b0;
+    font-style: italic;
+    white-space: nowrap;
+    padding: 0 4rem;
+}
+
+.pink{
+    background-color: #f4a2b0;
+}
+
+.marquee.pink .marquee-content h2{
+    color: #b2003b !important;
+}
+
+.scroll{
+    animation: scroll 20s linear infinite;
+}
+
+.reverse{
+    animation-direction: reverse;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+
+   to{
+        transform: translateX(calc(-100% - 1rem));
+    }
+}
+
+
+
+
+
+

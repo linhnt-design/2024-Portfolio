@@ -3,6 +3,7 @@ body{
   background-color: var(--white-creamy--) !important;
   overflow-y: scroll;
   height: fit-content;
+  width: 100vw;
 }
 
 .intro-video{
@@ -21,6 +22,7 @@ body{
 
 .header{
   height: 100vh;
+  width: 100vw;
 }
 
 .header .intro-projects{
