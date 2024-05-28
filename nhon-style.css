@@ -83,7 +83,7 @@ body{
     user-select: none;
     display: flex;
     gap: 1rem;
-    padding: 20px 0;
+    padding: 14px 0;
 }
 
 .marquee .marquee-content{
@@ -99,7 +99,7 @@ body{
     color: #f4a2b0;
     font-style: italic;
     white-space: nowrap;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 .pink{
@@ -107,7 +107,7 @@ body{
 }
 
 .marquee.pink .marquee-content h2{
-    color: #b2003b !important;
+    color: #b2003b;
 }
 
 .scroll{
@@ -127,6 +127,8 @@ body{
         transform: translateX(calc(-100% - 1rem));
     }
 }
+
+
 
 
 
