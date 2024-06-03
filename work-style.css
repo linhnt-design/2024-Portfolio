@@ -37,7 +37,7 @@ body{
 
 .intro-projects .heading h1{
   text-align: right !important;
-  color: var(--white-highlight--);
+  color: var(--blue-highlight--);
   rotate: -90deg;
 }
 

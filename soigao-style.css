@@ -78,16 +78,15 @@ body{
     background-color: #ffefe3;
 }
 
-.section3, .row h3{
-    font-family: "Truculenta", sans-serif;
+.section3, .row p{
+    font-family: "Montserrat", sans-serif;
     text-align: justify;
-    line-height: 25pt;
-    font-weight: 200;
+    font-weight: 300;
     color: #043a2d;
 }
 
 .section3, .row h2{
-    font-family: "Truculenta", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     color: #043a2d;
     padding-bottom: 20px;
@@ -98,8 +97,8 @@ body{
     margin: auto;
 }
 
-.viet-text h3{
-    font-weight: 200;
+.viet-text p{
+    font-weight: 300;
     color: rgb(189, 10, 108)
 }
 
