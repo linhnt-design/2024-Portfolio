@@ -26,7 +26,7 @@ body{
   padding-top: 8vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 3vw;
 }
 
 .pj{
@@ -172,7 +172,7 @@ body{
   }
 
   .projects .list-pj{
-    gap: 2vmin;
+    justify-content: space-between;
   }
 
   .projects .list-pj .pj{
@@ -207,6 +207,7 @@ body{
 
   .projects .list-pj{
     padding-top: 3vh;
+    gap: 0;
   }
 
   .projects .list-pj .pj{
