@@ -1,93 +1,21 @@
 
 body{
   background-color: var(--white-creamy--) !important;
-  overflow-y: scroll;
-  height: fit-content;
   width: 100vw;
-}
-
-.intro-video{
-  height: 100vh;
-  object-fit: fill;
-  position: absolute;
-  width: 100vw;
-  z-index: -1;
-  opacity: 70%;
 }
 
 #navbar{
     animation: fade 4s ease-out;
-    z-index: 1;
-}
-
-.header{
-  height: 100vh;
-  width: 100vw;
-}
-
-.header .intro-projects{
-  padding-top: 30vh;
-  animation: fade 4s ease-out;
-}
-
-.header .intro-projects .heading{
-  width: 30%;
-  z-index: -1;
-}
-
-.intro-projects .heading h1{
-  text-align: right !important;
-  color: var(--blue-highlight--);
-  rotate: -90deg;
-}
-
-#image-track {
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 30%;
-  top: 50%;
-  transform: translate(0,-50%);
-  user-select: none; 
-  z-index: -1;
-  animation: fade 1.5s ease-out 0s;
-}
-
-#image-track .image {
-  width: 46vmin;
-  height: 60vmin;
-  object-fit: cover;
-  object-position: 30% 100%;
-}
-
-.quote-section{
-  width: 100%;
-  height: fit-content;
-  padding: 40px 16%;
-  background-color: var(--blue-highlight--);
-}
-
-.quote-section h2{
-  margin: auto !important;
-  font-size: 30pt !important;
-  color: var(--blue-dark--);
-  text-align: center;
-}
-
-.quote-section span{
-  font-family: "Xanh Mono", monospace;
-  font-style: italic;
-  font-size: 6vw;
-  color: var(--white-highlight--);
-  animation: slideInRight 2s ease-out;
+    position: relative;
 }
 
 .projects{
   width: 80%;
-  margin: 80px auto;
+  padding-top: 10vh;
+  margin: auto;
   animation: reveal linear both;
   animation-timeline: view();
-  animation-range: entry 25% cover 40%;
+  animation-range: entry 35% cover 40%;
 }
 
 .projects .heading h1{
@@ -95,8 +23,9 @@ body{
 }
 
 .projects .list-pj{
-  margin: 80px auto;
+  padding-top: 8vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -118,7 +47,6 @@ body{
   width: 35vmin;
   height: 45vmin;
   object-fit: cover;
-
 }
 
 .pj .name{
@@ -147,18 +75,39 @@ body{
   color: var(--blue-dark--);
 }
 
-.quote-section .cta-btn{
+.quote-section{
+  width: 100%;
+  background-color: var(--blue-highlight--);
+  margin-top: 3vh;
+}
+
+.quote-section .marquee{
+  background-color: var(--blue-highlight--);
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  display: flex;
+  gap: 1rem;
+  padding: 14px 0;
+}
+
+.marquee .marquee-content{
+  flex-shrink: 0;
+  display: flex !important;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1.5rem;
+}
+
+.scroll{
+  animation: scroll 20s linear infinite;
+}
+
+.quote-section h2{
   width: fit-content;
   margin: auto;
-  padding: 30px 0;
+  color: var(--white-creamy--);
 }
-
-.quote-section .cta-btn button{
-  background-color: var(--white-highlight--);
-}
-
-
-
 
 @keyframes fade{
   0%{
@@ -196,3 +145,77 @@ body{
     transform: translateX(0);
   }
 }
+
+@keyframes scroll {
+  from{
+      transform: translateX(0);
+  }
+
+ to{
+      transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+/* tablet screen size */
+@media screen and (max-width: 1024px) {
+  h1{
+      font-size: 10vmin !important;
+  }
+
+  h3{
+      font-size: 2.25vmin !important;
+  }
+
+  .projects{
+    width: 90%;
+    padding-top: 4vh;
+  }
+
+  .projects .list-pj{
+    gap: 2vmin;
+  }
+
+  .projects .list-pj .pj{
+    width: 45%;
+  }
+
+  .pj img{
+    width: 100%;
+  }
+}
+
+/* mobile screen size */
+@media screen and (max-width: 480px) {
+  h1{
+      font-size: 10vmin !important;
+  }
+
+  h2{
+    font-size: 3.75=vmin;
+  }
+
+  h3{
+      font-size: 3.5vmin !important;
+  }
+
+  .projects{
+    width: 95%;
+    margin: auto;
+    padding-top: 4vh;
+    animation: none;
+  }
+
+  .projects .list-pj{
+    padding-top: 3vh;
+  }
+
+  .projects .list-pj .pj{
+    width: 90%;
+    margin: auto;
+  }
+
+  .pj img{
+    width: 100%;
+    height: 50vh;
+  }
+  }
