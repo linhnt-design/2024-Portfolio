@@ -123,7 +123,7 @@ body{
     animation-range: cover 10% cover 30%;
 }
 
-.row.image .col-6{
+.row.image .col-lg-6{
     padding-top: 0;
 }
 
@@ -132,23 +132,23 @@ body{
     padding: 0;
 }
 
-.col-6.right .row.top img{
+.col-lg-6.right .row.top img{
     width: 100%;
     height: 100%;
     padding: 0;
 }
 
-.row.image .col-6.right .row.bot{
+.row.image .col-lg-6.right .row.bot{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 0;
 }
 
-.col-6.right .row.bot img{
+.col-lg-6.right .row.bot img{
     padding: 0;
 }
 
-.col-6 img{
+.col-lg-6 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -204,13 +204,13 @@ body{
     transition: transform 0s ease !important;
 }
 
-.col-6.right img{
+.col-lg-6.right img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.col-6{
+.col-lg-6{
     padding-top: 20px;
 }
 
@@ -243,4 +243,209 @@ body{
     }
 }
 
+/* tablet screen size */
+@media screen and (max-width: 1024px) {
+    h1{
+        font-size: 10vmin !important;
+    }
+  
+    h3{
+        font-size: 2.25vmin !important;
+    }
 
+    h2{
+        text-align: left;
+    }
+
+    .text{
+        top: 22vmin;
+        height: 80vh;
+        margin: auto;
+    }
+
+    .text img{
+        scale: 150%;
+    }
+    
+    .text::before{
+        width: 100%;
+        background: url(img/soigao/boxes.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: center;
+    }
+
+    .section1::before{
+        background: url(img/soigao/base.png);
+    }
+    
+    .section1::after{
+        height: 90%;
+        top: 10%;
+        background: url(img/soigao/elements.png) cover;
+    }
+
+    .row.intro .eng-text{
+        padding: 2vmin 10%;
+    }
+
+    .row.intro .viet-text{
+        padding: 2vmin 10%;
+    }
+
+    .structure{
+        width: 100%;
+        height: 20vh;
+        padding: 20px 0;
+        background: url(img/soigao/structure-06.png) center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    
+    .grid{
+        width: 100%;
+        height: 20vh;
+        padding: 20px 0;
+        background: url(img/soigao/grid\ logo-06.png) center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+
+    .row.pattern{
+        width: 80%;
+    }
+
+  }
+  
+/* mobile screen size */
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 10vmin !important;
+    }
+  
+    h2{
+      font-size: 3.75vmin;
+      text-align: left;
+    }
+  
+    h3{
+        font-size: 3.5vmin !important;
+    }
+  
+    .text{
+        top: 30vmin;
+        height: 80vh;
+        margin: auto;
+    }
+
+    .text img{
+        scale: 160%;
+    }
+    
+    .text::before{
+        width: 100%;
+        background: url(img/soigao/boxes.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: center;
+    }
+
+    .section1{
+        height: 80vh;
+    }
+
+    .section1::before{
+        background: url(img/soigao/base.png);
+        height: 80vh;
+        top: -5%;
+    }
+    
+    .section1::after{
+        height: 80vh;
+        top: 10%;
+        background: url(img/soigao/elements.png) cover;
+    }
+
+    .section3{
+        padding: 15px 9;
+    }
+
+    .section3 .row{
+        animation: none;
+    }
+
+    .section3 .row.intro{
+        padding: 6vmin 0;
+    }
+
+    .row.intro .eng-text{
+        padding: 1.5vmin 3%;
+    }
+    
+    .row.intro .viet-text{
+        padding: 1.5vmin 3%;
+    }
+
+    .section3 .logo{
+        width: 90%;
+        height: 60vh;
+        margin: auto;
+    }
+
+    .section3 .logo img{
+        height: 100%;
+        object-fit: cover;
+        animation-range: entry 5% cover 30%;
+    }
+
+    .section3 .row{
+        width: 90%;
+        padding: 2vmin 0;
+    }
+
+    .structure{
+        width: 100%;
+        background-size: 100%;
+    }
+    
+    .grid{
+        width: 100%;
+    }
+
+    .row.image{
+        width: 90%;
+    }
+
+    .row.image .col-sm-12{
+        padding: 0 1%;
+    }
+
+    .row.image .col-sm-12.right .row.top{
+        width: 100%;
+    }
+
+    .row.image .col-sm-12.right .row.bot{
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .col-sm-12{
+        padding-top: 2vmin;
+    }
+
+    .col-sm-12 img{
+        width: 100%;
+    }
+
+    .row .col-12.layout img{
+        padding-top: 2vmin;
+    }
+
+    .row.items{
+        padding-top: 0;
+    }
+
+    .row .col-12.layout img{
+        animation: none;
+    }
+    }

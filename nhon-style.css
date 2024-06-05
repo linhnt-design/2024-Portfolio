@@ -35,12 +35,12 @@ body{
     flex-wrap: wrap;
 }
 
-.section .col-6 img, .col-12 img{
+.section .col-lg-6 img, .col-12 img{
     width: 100%;
 }
 
 
-.section .col-6.left .redgirl{
+.section .col-lg-6.left .redgirl{
     padding: 60px 0;
     height: 100vh;
     object-fit: cover;
@@ -48,7 +48,7 @@ body{
     
 }
 
-.col-6.right .intro-text{
+.col-lg-6.right .intro-text{
     width: 90%;
     margin: auto;
     padding: 30% 6%;
@@ -127,7 +127,7 @@ body{
     padding: 0;
 }
 
-.section.logo .col-6.right{
+.section.logo .col-xl-6.right{
     background-color: #b2003b;
     display: grid;
     animation: reveal ease-out both;
@@ -135,7 +135,7 @@ body{
     animation-range: cover 10% cover 60%;
 }
 
-.section.logo .col-6.left{
+.section.logo .col-xl-6.left{
     background-color: #f4a2b0;
     display: grid;
     animation: reveal-reverse ease-out both;
@@ -143,7 +143,7 @@ body{
     animation-range: cover 10% cover 60%;
 }
 
-.section.logo .col-6.left img, .section.logo .col-6.right img{
+.section.logo .col-xl-6.left img, .section.logo .col-xl-6.right img{
     display: block;
     width: 60%;
     align-self: center;    
@@ -160,19 +160,19 @@ body{
     animation-range: cover 15% cover 40%;
 }
 
-.section.images .col-6.left img, .section.images .col-6.right img{
+.section.images .col-xl-6.left img, .section.images .col-xl-6.right img{
     height: 80vh;
     width: 100%;
     object-fit: cover;
 }
 
-.section.images .col-6.left img{
+.section.images .col-xl-6.left img{
     animation: reveal ease-out both;
     animation-timeline: view();
     animation-range: cover 10% cover 50%;
 }
 
-.section.images .col-6.left img{
+.section.images .col-xl-6.left img{
     animation: reveal-reverse ease-out both;
     animation-timeline: view();
     animation-range: cover 10% cover 50%;
@@ -245,11 +245,11 @@ body{
     color: #b2003b;
 }
 
-.section.box .col-6{
+.section.box .col-xl-6{
     height: 100vh;    
 }
 
-.section.box .col-6.left img{
+.section.box .col-xl-6.left img{
     height: 100%;
     object-fit: cover;
     animation: reveal ease-out;
@@ -257,7 +257,7 @@ body{
     animation-range: cover 10% cover 40%;
 }
 
-.section.box .col-6.right {
+.section.box .col-xl-6.right {
     animation: reveal-reverse ease-out both;
     animation-timeline: view();
     animation-range: cover 10% cover 40%;
@@ -274,7 +274,7 @@ body{
     animation-range: cover 10% cover 50%;
 }
 
-.section.cover .col-6 img{
+.section.cover .col-xl-6 img{
     object-fit: contain !important;
 }
 
@@ -338,9 +338,210 @@ body{
 }
 
 /* tablet screen size */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    
+@media screen and (max-width: 1024px) {
+    h1{
+        font-size: 10vmin !important;
+    }
+  
+    h2{
+      font-size: 3.75vmin;
+      text-align: center;
+    }
+  
+    h3{
+        font-size: 3.5vmin !important;
+    }
+
+    .banner .banner-text{
+        width: 50%;
+        padding-top: 50%;
+    }
+
+    .section{
+        width: 90%;
+    }
+
+    .section .col-12 img{
+        animation: zoomshow ease-out both;
+        animation-timeline: view();
+        animation-range: cover 4% cover 30%;
+    }
+
+    .section .col-md-12.left .redgirl{
+        padding: 2vmin 0;
+        width: 100%;
+    }
+
+    .col-md-12.right .intro-text{
+        padding: 0 2vmin;
+        width: 95%;
+        animation-range: cover 4% cover 30%;
+    }
+
+    .intro-text .eng-text{
+        padding: 0;
+    }
+
+    .section.logo .col-md-12.left{
+        animation-range: cover 4% cover 20%;
+    }
+
+    .section.logo .col-md-12.right{
+        animation-range: cover 4% cover 20%;
+    }
+
+    .section.images{
+        animation: none;
+    }
+    .section.images .col-md-12.left img{
+        animation: none;
+    }
+
+    .section.images.section.images.colors .col-12 .pallete{
+        width: 65%;
+    }
+
+    .col-12 .pallete .color1, .color2, .color3, .color4, .color5{
+        width: 8vw;
+    }
+
+    .section.box .col-md-12.left img{
+        animation-range: cover 4% cover 20%;
+        width: 100%;
+    }
+
+    .section.box .col-md-12.right img{
+        animation-range: cover 4% cover 20%;
+    }
+
+    .section.cover .col-12 img{
+        animation-range: cover 4% cover 24%;
+    }
 }
+/* mobile screen size */
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 8vmin !important;
+    }
+  
+    h2{
+      font-size: 3vmin;
+      text-align: center;
+      line-height: 0;
+    }
+  
+    h3{
+        font-size: 2.75vmin !important;
+    }
+
+    .banner{
+        height: 60vh;
+    }
+
+    .banner .banner-text{
+        padding-top: 60%;
+    }
+
+    .section .col-sm-12.left{
+        width: 100%;
+    }
+
+    .section .col-sm-12.left .redgirl{
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .section.logo .col-sm-12.left{
+        animation: none;
+    }
+
+    .section .col-sm-12.right .intro-text{
+        margin: auto;
+    }
+
+    .section.logo .col-sm-12.right{
+        animation: none;
+    }
+    
+    .section.images .col-sm-12.left img{
+        height: 50vh;
+    }
+
+    .section.images .col-sm-12.right img{
+        height: 50vh;
+    }
+    
+    .section.images.colors{
+        animation: none;
+    }
+
+    .section.images.colors .col-12 .pallete-name{
+        animation: none;
+    }
+
+    .section.images.section.images.colors .col-12 .pallete{
+        width: 80%;
+    }
+
+    .col-12 .pallete .color1, .color2, .color3, .color4, .color5{
+        width: 12vw;
+    }
+
+    .col-12 .pallete li h3{
+        padding-top: 8vmin;
+    }
+
+    .section .col-12 img{
+        animation: none;
+    }
+
+    .section.box .col-sm-12{
+        height: 40vh;
+    }
+
+    .section.box .col-sm-12.left img{
+        animation: none;
+        height: 40vh;
+        padding-top: 20px;
+    }
+
+    .section.box .col-sm-12.right {
+        animation: none;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .section.box .carousel-item img{
+        width: 100%;
+    }
+
+    .section.box .carousel{
+        height: fit-content;
+    }
+
+    .section.box .col-sm-12.right .carousel{
+        height: 50vh;
+    }
+
+    .carousel .carousel-inner{
+        height: 100%;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section.cover .col-12 img{
+        animation: none;
+    }
+}
+    
+
 
 
 
