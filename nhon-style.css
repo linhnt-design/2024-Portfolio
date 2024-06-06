@@ -35,12 +35,12 @@ body{
     flex-wrap: wrap;
 }
 
-.section .col-lg-6 img, .col-12 img{
+.section .col-xl-6 img, .col-12 img{
     width: 100%;
 }
 
 
-.section .col-lg-6.left .redgirl{
+.section .col-xl-6.left .redgirl{
     padding: 60px 0;
     height: 100vh;
     object-fit: cover;
@@ -48,7 +48,7 @@ body{
     
 }
 
-.col-lg-6.right .intro-text{
+.col-xl-6.right .intro-text{
     width: 90%;
     margin: auto;
     padding: 30% 6%;
