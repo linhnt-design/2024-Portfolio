@@ -1,0 +1,288 @@
+body{
+    background-color: #040201 !important;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 8rem !important;
+    font-weight: 800 !important;
+    color: #E47E33;
+    text-align: right !important;
+}
+
+h2, h3, h4, p{
+    font-family: "Montserrat", sans-serif !important;
+}
+
+#navbar{
+    background-color: #1A1A1A !important;
+}
+
+#navbar ul li a h3{
+    font-family: "Xanh Mono", monospace !important;    
+    font-size: 1.5rem !important;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0 !important;
+    color: var(--blue-dark--);
+}
+
+.nav-link.active h3{
+    color: #E47E33 !important;
+}
+
+.nav-link h3{
+    color: antiquewhite !important;
+}
+
+.eng-text, .viet-text{
+    padding: 1vmin 0;
+}
+
+.eng-text h2{
+    font-style: italic;
+    padding: 2vmin 0;
+}
+
+.eng-text p{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.banner{
+    width: 90vw;
+    height: 86vh;
+    display: flex;
+    margin: auto;
+}
+
+.banner .col-xl-6.left .banner-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .col-xl-6.right{
+    padding-top: 30vh;
+    padding-right: 2vmin;
+}
+
+.banner .col-xl-6.right h2{
+    text-align: right;
+}
+
+.banner .col-xl-6.right .eng-text{
+    width: 90%;
+    padding-bottom: 4vmin;
+}
+
+.col-xl-6.right .eng-text h2{
+    color: #E47E33;
+}
+
+.banner .col-xl-6.right .viet-text{
+    width: 90%;
+}
+
+.col-xl-6.right .viet-text h3{
+    color: antiquewhite;
+    text-align: right;
+    font-style: italic;
+    padding-bottom: 1.5vmin;
+}
+
+.col-xl-6.right .viet-text h4{
+    color: antiquewhite;
+    text-align: right;
+    font-style: italic;
+}
+
+.section.summary h1, h2 {
+    color: #E47E33 !important;
+    font-style: italic;
+}
+
+.section.summary h4, p{
+    color: antiquewhite;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.section{
+    padding: 4vmin 0;
+}
+
+.section.summary{
+    width: 100%;
+    margin: auto;
+    padding-top: 10vmin;
+    display: flex;
+}
+
+.col-xl-3{
+    padding: 8vmin 5vmin;
+    background-color: #1A1A1A;
+}
+
+.col-xl-3 .row.icon{
+    height: 8vh;
+    padding-bottom: 3vmin;
+}
+
+.col-xl-3 .row.text{
+    display: block;
+}
+
+.col-xl-3 .row.icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.col-xl-3 .row.text h3{
+    width: fit-content;
+    margin: auto !important;
+    color: #E47E33;
+    padding-bottom: 2vmin;
+}
+
+.col-xl-3 .row.text h4{
+    width: fit-content;
+    margin: auto !important;
+}
+
+.col-xl-6 .eng-text, .col-xl-6 .viet-text{
+    width: 85%;
+}
+
+.section.overview{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2vmin;
+    padding: 4vmin 0;
+}
+
+.section img{
+    width: 100%;
+}
+
+.section.overview .col-xl-6.left .eng-text h2{
+    text-align: right;
+}
+
+.section.overview .col-xl-6.left .eng-text p{
+    font-style: italic;
+    text-align: right;
+}
+
+.section.overview .col-xl-6.left .viet-text h2, .section.overview .col-xl-6.left .viet-text p{
+    text-align: end;
+}
+
+.section.overview .col-xl-6.right .eng-text h2{
+    text-align: left;
+}
+
+.col-xl-6.right .eng-text, .col-xl-6.right .viet-text{
+    float: right;
+}
+
+.section.user-research{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section.user-research .col-12.intro{
+    padding: 3vmin 0;
+}
+
+.section.user-research .col-12.intro .eng-text, .section.user-research .col-12.intro .viet-text{
+    width: 50%;
+    margin: auto;
+}
+
+.section.user-research .col-12.intro .eng-text h2, .section.user-research .col-12.intro .eng-text p{
+    text-align: center;
+}
+
+.section.user-research .col-12.intro .viet-text h2, .section.user-research .col-12.intro .viet-text p{
+    text-align: center;
+}
+
+.section.user-research .col-12.survey .eng-text, .section.user-research .col-12.survey .viet-text{
+    width: 50%;
+    margin: auto;
+}
+
+.section.user-research .col-12.survey .viet-text{
+    padding-bottom: 4vmin;
+}
+
+.section.user-research .col-12.survey .eng-text h2, .section.user-research .col-12.survey .eng-text p{
+    text-align: center;
+}
+
+.section.user-research .col-12.survey .viet-text h2, .section.user-research .col-12.survey .viet-text p{
+    text-align: center;
+}
+
+.section.user-research .col-12.survey .survey-images{
+    width: 80%;
+    margin: auto;
+}
+
+.section.user-research .col-12.survey .row.images{
+    width: 80%;
+    margin: auto;
+}
+
+.section.user-research .col-12.survey .row.empathy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 4vmin 0;
+    background-color: #1A1A1A;
+}
+
+.col-12.survey .row.empathy .col-xl-6{
+    padding: 2vmin 0;
+}
+
+.col-12.survey .row.empathy .col-xl-6 h3{
+    color: #E47E33;
+    text-align: center;
+}
+
+.col-12.survey .row.empathy .col-xl-6 p{
+    text-align: center;
+}
+
+.col-xl-6 .row.persona1{
+    align-items: first baseline;
+}
+
+.row.persona{
+    width: 90%;
+    margin: auto;
+}
+
+.row.persona1 .col-8.content h2, .row.persona1 .col-8.content h3{
+    color: #E47E33;
+}
+
+.row.persona1 .col-8.content ul{
+    list-style-type: disc;
+    color: #E47E33;
+    width: 100%;
+}
+
+.row.compare img{
+    width: 70%;
+    margin: auto;
+}
+
+
+
+
