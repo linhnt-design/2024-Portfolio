@@ -279,10 +279,69 @@ h2, h3, h4, p{
 }
 
 .row.compare img{
+    width: 65%;
+    margin: auto;
+}
+
+.section.design .col-12.intro .eng-text, .section.design .col-12.intro .viet-text{
+    width: 50%;
+    margin: auto;
+}
+
+.section.design .col-12.intro .eng-text p, .section.design .col-12.intro .viet-text p{
+    text-align: center;
+}
+
+.section.design .col-12.intro .eng-text h2{
+    text-align: center;
+}
+
+.section.design {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section.design .row.sitemap, .section.design .row.userflow{
+    width: 100%;
+}
+
+.section.design .col-xl-6{
+    padding: 4vmin 0;
+}
+
+.section.design .row.sitemap img{
+    width: 80%;
+    margin: auto;
+}
+
+.section.design .row.userflow .col-xl-6 .row.intro .eng-text{
+    margin: auto;
+}
+
+.section.design .row.userflow .col-xl-6 .row.intro .eng-text h3{
+    text-align: center;
+    color: #E47E33;
+}
+
+.row.wireframe{
+    width: 100%;
+}
+
+.row.wireframe .col-xl-4{
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    display: grid;
+    align-items: flex-start;
+}
+
+.row.wireframe .col-xl-4 img{
     width: 70%;
     margin: auto;
 }
 
-
-
-
+.row.wireframe .col-xl-4 h3{
+    text-align: center;
+    color: #E47E33;
+}
