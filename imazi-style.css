@@ -1,5 +1,6 @@
 body{
     background-color: #040201 !important;
+    overflow-x: hidden;
 }
 
 h1{
@@ -53,6 +54,7 @@ h2, h3, h4, p{
     width: 90vw;
     height: 86vh;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
 }
 
@@ -117,6 +119,7 @@ h2, h3, h4, p{
     margin: auto;
     padding-top: 10vmin;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-xl-3{
@@ -268,6 +271,8 @@ h2, h3, h4, p{
     margin: auto;
 }
 
+
+
 .row.persona1 .col-8.content h2, .row.persona1 .col-8.content h3{
     color: #E47E33;
 }
@@ -311,6 +316,15 @@ h2, h3, h4, p{
     padding: 4vmin 0;
 }
 
+.row.userflow .col-xl-6{
+    display: grid;
+}
+
+.row.userflow .col-xl-6 img{
+    width: 70%;
+    margin: auto;
+}
+
 .section.design .row.sitemap img{
     width: 80%;
     margin: auto;
@@ -345,3 +359,427 @@ h2, h3, h4, p{
     text-align: center;
     color: #E47E33;
 }
+
+.row.wireframe .col-xl-3{
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    display: grid;
+    align-items: flex-start;
+    background-color: #040201;
+}
+
+.row.wireframe .col-xl-3 img{
+    width: 50%;
+    margin: auto;
+}
+
+.row.wireframe .col-xl-3 h3{
+    text-align: center;
+    color: #E47E33;
+}
+
+.row.style-guide .col-xl-6{
+    display: grid;
+}
+
+.row.style-guide .col-xl-6 img{
+    width: 70%;
+    margin: auto;
+}
+
+.row.style-guide .col-xl-6 h3{
+    color: #E47E33;
+    height: fit-content;
+}
+
+.col-12.compo{
+    display: grid;
+}
+
+.col-12.compo img{
+    width: 60%;
+    margin: auto;
+}
+
+.section.design .col-12.layout{
+    padding: 4vmin 0;
+    width: 100%;
+    display: flex;
+}
+
+.section.design .col-12.layout img{
+    width: 90%;
+    margin: auto;
+}
+
+/* desktop small */
+@media screen  and (max-width: 1440px){
+
+    .banner{
+        height: 90vh;
+    }
+    .banner .col-lg-6.right{
+        padding-top: 20vh;
+    }
+    .eng-text h3, .viet-text h3{
+        line-height: 1.5;
+    }
+
+    .section.summary h3{
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .section.summary h4{
+        text-align: center;
+    }
+
+    .col-lg-3{
+        padding: 4vmin 2.5vmin;
+    }
+
+    .col-12.survey .row.empathy .col-lg-6{
+        padding: 2vmin 3vmin;
+    }
+
+    .row.compare img{
+        width: 80%;
+    }
+
+    .row.userflow .col-lg-6 img{
+        width: 80%;
+    }
+
+    .row.style-guide .col-lg-6 .col-12.intro .eng-text{
+        width: 70%;
+    }
+
+    .section.user-research .col-12.intro .eng-text, .section.user-research .col-12.intro .viet-text {
+        width: 70%;
+        margin: auto;
+    }
+
+    .section.user-research .col-12.survey .eng-text, .section.user-research .col-12.survey .viet-text{
+        width: 70%;
+        margin: auto;
+    }
+
+    .section.design .col-12.intro .eng-text, .section.design .col-12.intro .viet-text{
+        width: 70%;
+    }
+
+    .row.wireframe .col-lg-3 img{
+        width: 70%;
+    }
+}
+
+/* tablet screen size */
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 5vmin !important;
+    }
+  
+    h2{
+      font-size: 3.75vmin !important;
+      text-align: center;
+    }
+  
+    h3{
+        font-size: 3.5vmin !important;
+    }
+
+    h4{
+        font-size: 1.05rem !important;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .banner .col-md-12.right{
+        padding: 3vmin 2vmin 0 0;
+    }
+    
+    .banner .col-md-12.right .eng-text h1{
+        text-align: center;
+    }
+    .banner .col-md-12.right .eng-text h2{
+        text-align: center;
+    }
+
+    .banner .col-md-12.right .viet-text h3{
+        text-align: center;
+    }
+
+    .banner .col-md-12.right .viet-text h4{
+        text-align: center;
+    }
+
+    .col-md-6{
+        padding: 3vmin 1vmin;
+    }
+
+    .col-md-12{
+        padding: 2vmin 1vmin;
+    }
+
+    .col-md-6 .row.icon{
+        height: 4vh;
+        padding-bottom: 1vmin;
+    }
+
+    .section{
+        padding: 1vmin 0;
+    }
+
+    .section.overview{
+        flex-wrap: wrap;
+    }
+
+    .col-md-12 .eng-text, .col-md-12 .viet-text {
+        margin: auto;
+        width: 90%;
+        float: none !important;
+    }
+
+    .col-md-12 .eng-text h2, .eng-text p{
+        text-align: center;
+    }
+
+    .col-md-12 .viet-text p{
+        text-align: center;
+    }
+
+    .section.user-research .col-12.intro .eng-text, .section.user-research .col-12.intro .viet-text{
+        width: 80%;
+        margin: auto;
+    }
+
+    .section.user-research .col-12.survey .eng-text, .section.user-research .col-12.survey .viet-text{
+        width: 80%;
+        margin: auto;
+    }
+
+    .col-12.intro{
+        padding: 2vmin 0;
+    }
+
+    .row.compare img{
+        width: 95%;
+    }
+
+    .section.design .col-12.intro .eng-text, .section.design .col-12.intro .viet-text{
+        width: 80%;
+        margin: auto;
+    }
+
+    .section.design .row.sitemap img{
+        width: 95%;
+    }
+
+    .row.userflow .col-md-6 img{
+        width: 100%;
+    }
+
+    .row.userflow .col-md-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row.wireframe .col-md-4 .row.intro .eng-text{
+        padding: 1.5vmin 0;
+    }
+
+    .row.wireframe .col-md-4 .row.intro .eng-text h3, .row.wireframe .col-md-3 .row.intro .eng-text h3{
+        line-height: 1.5;
+        font-size: 1rem !important;
+    }
+
+    .row.wireframe .col-md-3 img{
+        width: 100%;
+    }
+
+    .eng-text h2{
+        padding: 1vmin 0;
+    }
+
+    .row.style-guide .col-md-6{
+        padding: 1vmin 0;
+    }
+
+    .row.row.style-guide .col-md-6 .col-12.intro .eng-text h2{
+        font-size: 1.5rem !important;
+    }
+
+    .row.style-guide .col-md-6 img{
+        width: 95%;
+    }
+    
+    .row.wireframe .col-md-6 img{
+        width: 100%;
+    }
+
+    .row.wireframe .col-md-3 img{
+        width: 100%;
+    }
+    
+}
+
+/* mobile screen size */
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 8vmin !important;
+        text-align: center !important;
+    }
+  
+    h2{
+      font-size: 6vmin !important;
+      text-align: center;
+    }
+  
+    h3{
+        font-size: 3vmin !important;
+    }
+
+    h4{
+        font-size: 0.75rem !important;
+    }
+
+    p{
+        font-size: 0.9em !important;
+    }
+
+    #navbar ul li a h3{
+        font-size: 3vmin !important;
+    }
+
+    .banner .col-sm-12.left{
+        height: fit-content;
+    }
+    .banner .col-sm-12.right{
+        padding: 10vmin 0 2vmin 0;
+    }
+
+    .section.summary .col-sm-12{
+        width: 100%;
+        padding: 6vmin 0;
+    }
+
+    .section{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section.overview .col-sm-12.left .viet-text h2, .section.overview .col-sm-12.left .eng-text h2, .section.overview .col-sm-12.left .viet-text p, .section.overview .col-sm-12.left .eng-text p{
+        text-align: justify;
+    }
+
+    .section.overview .col-sm-12.right .viet-text h2, .section.overview .col-sm-12.right .eng-text h2, .section.overview .col-sm-12.right .viet-text p, .section.overview .col-sm-12.right .eng-text p{
+        text-align: justify;
+    }
+
+    .section.user-research .col-12.intro .eng-text h2, .section.user-research .col-12.intro .eng-text p, .section.user-research .col-12.intro .viet-text h2, .section.user-research .col-12.intro .viet-text p{
+        text-align: justify;
+    }
+
+    .section.user-research .col-12.survey .eng-text h2, .section.user-research .col-12.survey .eng-text p, .section.user-research .col-12.survey .viet-text h2, .section.user-research .col-12.survey .viet-text p{
+        text-align: justify;
+    }
+
+    .section.user-research .col-sm-12.intro .eng-text, .section.user-research .col-sm-12.intro .viet-text{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section.user-research .col-sm-12.survey .eng-text, .section.user-research .col-sm-12.survey .viet-text{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section.user-research .col-sm-12.survey .row.images{
+        width: 95%;
+    }
+
+    .section.user-research .col-sm-12.survey .row.empathy{
+        width: 90%;
+    }
+    .col-12.survey .row.empathy .col-sm-12{
+        padding: 2vmin 5vmin;
+    }
+    
+    .row.persona1{
+        display: block;
+    }
+
+    .row.persona1 .col-sm-12.image{
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5vmin;
+    }
+
+
+    .row.persona1 .col-sm-12.content{
+        width: 100%;
+    }
+
+    .row.persona1 .col-sm-12.content .col-12.intro .eng-text h2{
+        text-align: center;
+    }
+
+    .row.compare{
+        width: 100%;
+        margin: auto;
+    }
+
+    .row.compare img{
+        width: 100%;
+    }
+
+    .section.design .col-12.intro .eng-text, .section.design .col-12.intro .viet-text{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section.design .col-12.intro .eng-text h2, .section.design .col-12.intro .eng-text p, .section.design .col-12.intro .viet-text h2, .section.design .col-12.intro .viet-text p {
+        text-align: justify;
+    }
+
+    .section.design{
+        width: 90%;
+    }
+    
+    .row.persona{
+        width: 100%;
+        margin: auto;
+    }
+
+    .row.sitemap, .row.userflow, .row.wireframe, .row.style-guide{
+        width: 100%;
+        margin: auto;
+    }
+
+    .row.wireframe .col-sm-12 img{
+        width: 100%;
+    }
+
+    .row.wireframe .col-sm-6{
+        width: 50%;
+        margin: auto;
+    }
+
+    .row.wireframe .col-sm-6 img{
+        width: 100%;
+    }
+
+    .row.style-guide .col-sm-12 .col-12.intro .eng-text h2{
+        text-align: center;
+    }
+
+    .row.style-guide .col-sm-12 img{
+        width: 100%;
+    }
+    
+    .section.design .col-12.layout img{
+        width: 100%;
+    }
+    }
