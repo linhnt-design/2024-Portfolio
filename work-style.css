@@ -5,7 +5,6 @@ body{
 }
 
 #navbar{
-    animation: fade 4s ease-out;
     position: relative;
 }
 

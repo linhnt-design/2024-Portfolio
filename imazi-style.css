@@ -405,11 +405,19 @@ h2, h3, h4, p{
     padding: 4vmin 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .section.design .col-12.layout img{
     width: 90%;
     margin: auto;
+}
+
+.col-xl-6.screens .col-12.intro .eng-text, .col-xl-6.screens .col-12.intro .viet-text {
+    width: 80%;
+}
+.col-xl-6.screens .col-12.intro .eng-text p, .col-xl-6.screens .col-12.intro .viet-text p{
+    text-align: left;
 }
 
 /* desktop small */
@@ -623,6 +631,13 @@ h2, h3, h4, p{
         width: 100%;
     }
     
+    .section.design .col-12.layout img{
+        width: 100%;
+    }
+
+    .row.wireframe .col-md-12.screens .col-12.intro .eng-text p, .row.wireframe .col-md-12.screens .col-12.intro .viet-text p{
+        text-align: center;
+    }
 }
 
 /* mobile screen size */
@@ -741,7 +756,7 @@ h2, h3, h4, p{
     }
 
     .section.design .col-12.intro .eng-text h2, .section.design .col-12.intro .eng-text p, .section.design .col-12.intro .viet-text h2, .section.design .col-12.intro .viet-text p {
-        text-align: justify;
+        text-align: center;
     }
 
     .section.design{
@@ -782,4 +797,5 @@ h2, h3, h4, p{
     .section.design .col-12.layout img{
         width: 100%;
     }
+
     }
