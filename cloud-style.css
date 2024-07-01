@@ -405,6 +405,10 @@ img{
         width: 100%;
     }
 
+    .section.style .col-lg-6 img{
+        width: 100%;
+    }
+
     .row.overlap{
         height: 85vh;
         width: 100%;
