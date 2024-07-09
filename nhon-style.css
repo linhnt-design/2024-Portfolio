@@ -3,12 +3,25 @@ body{
     overflow-y: scroll !important;
 }
 
-#navbar{
-    background-color: rgba(178, 0, 59, 80%) !important;
+h3{
+    font-size: 1.75rem;
 }
 
-.nav-link.active h3{
-    color: #f4a2b0 !important;
+h4{
+    font-size: 1.25rem !important;
+}
+
+p{
+    font-size: 1.2rem !important;
+}
+
+#navbar{
+    background-color: rgba(178, 0, 59, 0.6) !important;
+    border-width: 0.5px !important;
+}
+
+.nav-link h4{
+    color: #fbeef2 !important;
 }
 
 .banner{

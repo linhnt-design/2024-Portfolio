@@ -18,7 +18,20 @@ body{
 }
 
 .projects .heading h1{
-  color: var(--blue-dark--);
+  font-family: "Staatliches", sans-serif;
+  color: var(--red-dark--);
+}
+
+.projects .heading{
+  width: 70%;
+  margin: auto;
+}
+
+.projects .heading h4{
+  color: var(--red-dark--);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .projects .list-pj{

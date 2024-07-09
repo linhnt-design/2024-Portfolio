@@ -2,7 +2,17 @@ html{
     height: 100vh;
     overflow: hidden;
 }
+h3{
+    font-size: 1.75rem;
+}
 
+h4{
+    font-size: 1.25rem !important;
+}
+
+p{
+    font-size: 1.2rem !important;
+}
 
 body{
     margin: 0;
@@ -15,14 +25,9 @@ body{
     background-color: #ffefe3 !important;
 }
 
-#navbar{
-    background-color: rgba(189, 10, 108, 80%)!important;
+.nav-link h4{
+    color: rgb(189, 10, 108);
 }
-
-.nav-link.active h3{
-    color: #f4bc91 !important;
-}
-
 
 .section1{
     width: 100%;

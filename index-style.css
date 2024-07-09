@@ -1,21 +1,51 @@
+body{
+    background-color: var(--white-creamy--) !important;
+    width: 100vw;
+    overflow-y: scroll;
+  }
+  
+#navbar{
+    position: fixed;
+    z-index: 2;
+    background-color: var(--white-creamy--);
+}
+
+#navbar .nav-link:hover h4{
+    transform: rotate(-6deg);
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+h4{
+    font-size: 1.25rem !important;
+}
 
 .intro-video{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -2;
+    filter: sepia(40%);
+}
+
+header{
+    position: relative;
+    height: 90vh;
+    z-index: 1;
 }
 
 .intro-heading{
     width: 100%;
     margin: auto;
-    padding: 26vh 0 1vh 0;
+    padding-top: 20vh;
 }
 
 .intro-heading h1{
-    color: var(--blue-dark--);
+    color: var(--red-dark--);
 }
 
 .intro-sentence{
@@ -25,35 +55,416 @@
 }
 
 .intro-sentence h3{
-    color: var(--blue-dark--);
+    color: var(--red-dark--);
     text-align: center;
     padding-top: 20px;
-    font-style: italic;
-
+    font-weight: 400 !important;
+    line-height: 1.5;
 }
 
 .icon-btn{
     margin: auto;
     width: fit-content;
-    padding-top: 15vh;
+    padding-top: 5vh;
+}
+
+.icon-btn img{
+    width: 100%;
+    rotate: 90deg;
+}
+
+.quote-section{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 2vh;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-color: var(--red-dark--);    
+    transform: rotate(3deg);
+    background-color: var(--white-creamy--);
+}
+  
+.quote-section .marquee{
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    gap: 1rem;
+    padding: 14px 0;
+    z-index: 1;
+}
+  
+.marquee .marquee-content{
+    flex-shrink: 0;
+    display: flex !important;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1.5rem;
+} 
+
+.quote2{
+    transform: rotate(-3deg);
+    background-color: var(--red-dark--);
+}
+
+.quote-section.quote2 h2{
+    color: var(--white-highlight--);
+}
+
+.marquee2 .scroll{
+    animation: scroll 20s linear infinite backwards;
+}
+
+.scroll{
+    animation: scroll 20s linear infinite reverse;
+}
+
+.quote-section h2{
+    width: fit-content;
+    margin: auto;
+    font-style: italic;
+    color: var(--red-dark--);
+}
+
+.section{
+    position: relative;
+    width: 100vw;
+    background-color: var(--white-creamy--);
+}
+
+.projects{
+    min-height: 20vh;
+    width: 60%;
+    margin: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: 6vmin 0;
+    animation: reveal-reverse ease-out both;
+    animation-timeline: scroll();
+    animation-range: cover 8% cover 15%;
+}
+  
+.projects h1{
+    font-family: "Staatliches", sans-serif;
+    color: var(--red-dark--);
+    
+}
+
+.projects h3{
+    padding-top: 2vh;
+    text-align: center;
+    color: var(--red-dark--);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.projects .tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 5%;
+    padding-top: 4vmin;
+    row-gap: 18px;
+    justify-content: center;
+    margin: auto;
+}
+
+.tags-list .tag{
+    width: fit-content;
+    padding: 12px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1.5px;
+    border-color: var(--red-dark--);
+}
+
+#sectionPin {
+	/* Stretch it out, so that we create room for the horizontal scroll animation */
+	height: 500vh;
+	overflow: visible; /* To make position sticky work … */
+	view-timeline-name: --section-pin-tl;
+	view-timeline-axis: block;
+    animation: reveal ease-out both;
+    animation-timeline: scroll();
+    animation-range: cover 10% cover 20%;
+}
+
+#sectionPin .pin-wrap-sticky .pin-wrap .leftbox h3{
+    color: var(--red-dark--);
+    font-weight: 400;
+    line-height: 1.5;
+    min-width: 10%;
+    text-align: right;
+}
+
+.pin-wrap img{
+    height: 80vh;
+    width: 36vmax;
+    object-fit: cover;
+    filter: grayscale(80);
+    -webkit-filter: grayscale(80);
+}
+
+
+.pin-wrap .box:hover img{
+    filter: grayscale(0) brightness(10%);
+    -webkit-filter: grayscale(0) brightness(50%);
+    transition: 300ms;
+}
+
+.pin-wrap .leftbox{
+    width: 20vw;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.pin-wrap .icon{
+    width: 40px;
+    height: 40px;
+    filter: none;
+    -webkit-filter: none;
+}
+
+.pin-wrap-sticky {
+	/* Stick to Top */
+	height: 100vh;
+	width: 100vw;
+	position: sticky;
+	top: 0;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.pin-wrap>*{
+    width: 40vmax;
+    padding: 0 5vmin;
+}
+
+.pin-wrap {
+    display: flex;
+	height: 100vh;
+	width: 250vmax;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+
+	/* Hook animation */
+	will-change: transform;
+	animation: linear move forwards;
+
+	/* Link animation to view-timeline */
+	animation-timeline: --section-pin-tl;
+	animation-range: contain 0% contain 100%;
+}
+
+.pin-wrap .box{
+    width: 40vmax;
+    position: relative;
+}
+
+.pin-wrap .content{
+   z-index: 1;
+    position: absolute;
+    top: 30%;
+    padding: 4vmin;
+    display: grid;
+    width: 90%;
+    opacity: 0;
+}
+
+.pin-wrap .box:hover .content{
+    opacity: 1;
+}
+
+.pin-wrap .content h1{
+    width: auto;
+    margin: auto;
+    color: var(--white-highlight--);
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.pin-wrap .box .content .bodytext{
+    margin: auto !important;
+    color: var(--white-highlight--) !important;
+    text-align: center;
+    padding-bottom: 4vmin;
+    line-height: 1.5;
+    width: 70%;
+}
+
+.box .content .btn{
+    width: 100%;
+}
+
+.seemore-btn{
+    margin: auto;
+    padding: 12px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1.5px;
+    border-color: var(--red-dark--);
+}
+
+.seemore-btn h4{
+    color: var(--white-highlight--) !important;
+}
+
+.pin-wrap .box:hover .seemore-btn{
+    border-color: var(--white-highlight--);
+}
+
+.section2{
+    background-color: var(--red-dark--);
+    animation: zoomshow ease-out both;
+    animation-timeline: view();
+    animation-range: cover 1% cover 30%;
+
+}
+
+.section.section2 .quote-section2 h1, .section.section2 .quote-section2 h4{
+    color: var(--white-highlight--) !important;
+}
+
+.section.section2 .quote-section2 h3{
+    font-weight: 400;
+    text-align: center;
+    padding-top: 2vh;
+    line-height: 1.5;
+    color: var(--white-highlight--);
+}
+
+.section.section2 .quote-section2 h4{
+    padding: 2vh 0;
+    text-align: center;
+} 
+
+.quote-section2{
+    width: 60%;
+    margin: auto;
+    padding: 6vmin 0;
+}
+
+@keyframes move {
+	to {
+		/* Move horizontally so that right edge is aligned against the viewport */
+		transform: translateX(calc(-100% + 100vw));
+	}
+}
+
+  @keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+  
+   to{
+        transform: translateX(calc(-100% - 1rem));
+    }
+  }
+
+  @keyframes reveal {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  
+    from{
+      transform: translateX(-600px);
+    }
+  
+    to{
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zoomshow {
+    0%{
+        opacity: 0;
+        clip-path: inset(70% 40% 70% 40%);
+    }
+    
+    100%{
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+@keyframes reveal-reverse {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  
+    from{
+      transform: translateX(600px);
+    }
+  
+    to{
+      transform: translateX(0);
+    }
+  }
+
+
+/* small desktop size */
+@media screen and (max-width: 1440px) {
+    h1{
+        font-size: 14vmin !important;
+    }
+
+    h4{
+        font-size: 3vmin !important;
+    }
+
+    #navbar{
+        border-width: 1.5px;
+    }
+
+    .intro-heading{
+        padding-top: 16vh;
+    }
+
+    .intro-sentence{
+        width: 60%;
+    }
+
+    .intro-sentence h3{
+        font-size: 1.5rem !important;
+    }
+
+    .icon-btn{
+        padding-top: 6vh;
+    }
+
 }
 
 /* tablet screen size */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
+@media screen and (max-width: 1024px), (device-width:1024px) {
     h1{
-        font-size: 10vmin !important;
+        font-size: 12vmin !important;
     }
 
-    h3{
-        font-size: 2.25vmin !important;
+    h4{
+        font-size: 14px !important;
     }
+
+    .intro-heading{
+        padding-top: 30vh;
+    }
+
     .intro-sentence{
-        width: 80vw;
+        width: 86vw;
     }
 
     .intro-sentence h3{
         line-height: 1.75;
+        font-size: 1.25rem !important;
     }
 
     .intro-heading{
@@ -61,8 +472,99 @@
     }
 
     .icon-btn{
-        padding-top: 6vh;
+        padding-top: 3vh;
     }
+
+    .projects{
+        width: 80%;
+        padding: 3vmin 0;
+        animation: none;
+    }
+
+    .projects h3{
+        font-size: 1.25rem;
+    }
+
+    .projects .tags-list{
+        width: 100%;
+    }
+
+    .projects .tags-list .tag h4{
+        font-size: 14px !important;
+    }
+
+    #sectionPin{
+        height: fit-content;
+    }
+
+    #sectionPin .pin-wrap-sticky{
+        height: 60vh;
+        overflow-x: visible;
+        overflow-y: hidden;
+    }
+
+    .pin-wrap a:hover .content{
+        width: 90%;
+        top: 16%;
+    }
+
+    .pin-wrap{
+        width: 190vmax;
+        height: 60vh;
+        will-change: unset;
+        animation: none;
+    }
+
+    .pin-wrap .leftbox{
+        width: 80%;
+        flex-wrap: wrap;
+        padding: 0 2vmin;
+    }
+
+    .pin-wrap .leftbox h3{
+        width: 100%;
+        font-size: 16px;
+        padding-bottom: 2vmin;
+    }
+
+    .pin-wrap img{
+        height: 40vh;
+        width: 30vmax;
+    }
+
+    .pin-wrap .box{
+        padding: 0 2vmin;
+    }
+
+    .pin-wrap .leftbox img{
+        width: 10%;
+        margin: auto;
+        height: auto;
+    }
+
+    .pin-wrap .box .content{
+        top: 18%;
+    }
+    .pin-wrap .box .content .bodytext{
+        font-size: 14px !important;
+    }
+
+    .seemore-btn h4{
+        font-size: 14px !important;
+    }
+
+    .section.section2{
+        animation: none;
+    }
+
+    .quote-section2 h3{
+        font-size: 1.25rem;
+    }
+
+    .quote-section2 h4{
+        font-size: 14px !important;
+    }
+
 }
 
 /* mobile screen size */
@@ -71,8 +573,8 @@
         font-size: 10vmin !important;
     }
 
-    h3{
-        font-size: 3.75vmin !important;
+    header{
+        height: 80vh;
     }
     
     .intro-sentence{
@@ -81,11 +583,12 @@
 
     .intro-sentence h3{
         line-height: 1.75;
+        font-size: 16px !important;
     }
 
     .intro-heading{
         width: 80vw;
-        padding-top: 15vh;
+        padding-top: 16vh;
     }
 
     .icon-btn{
@@ -95,8 +598,62 @@
     }
 
     .icon-btn img{
-        width: 100%;
+        width: 80%;
     }
+
+    .quote-section{
+        bottom: 8vh;
+        transform: rotate(-8deg);
+    }
+
+    .quote-section.quote2{
+        bottom: 8vh;
+        transform: rotate(6deg);
+    }
+
+
+    .projects{
+        padding-top: 2vh;
+        animation: none;
+    }
+
+    .projects h1{
+        padding-top: 4vmin;
+    }
+
+    .projects h3{
+        font-size: 16px;
+    }
+
+    .pin-wrap .leftbox{
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+
+    .pin-wrap .leftbox h3{
+        font-size: 16px;
+        padding-bottom: 3vmin;
+
+    }
+
+    .pin-wrap .leftbox .icon{
+        width: 100%;
+        height: auto;
+        padding-left: 70%;
+    }
+
+    .section.section2{
+        animation: none;
+    }
+
+    .section.section2 .quote-section.quote2 h3{
+        font-size: 16px !important;
+    }
+
+
+
+
+
 
 }
 

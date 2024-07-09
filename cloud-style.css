@@ -20,7 +20,8 @@ img{
 }
 
 #navbar{
-    background-color: #2B293E !important;
+    background-color: rgba(43, 41, 61, 0.8) !important;
+    border-width: 0.5px !important;
 }
 
 #navbar ul li a h3{
@@ -31,11 +32,7 @@ img{
     margin: 0 !important;
 }
 
-.nav-link.active h3{
-    color: #FEBBA0 !important;
-}
-
-.nav-link h3{
+.nav-link h4{
     color: #F5F5F5 !important;
 }
 
