@@ -1,7 +1,6 @@
 body{
     background-color: var(--white-creamy--) !important;
     width: 100vw;
-    overflow-y: scroll;
   }
   
 #navbar{
@@ -309,7 +308,7 @@ header{
     border-color: var(--red-dark--);
 }
 
-.seemore-btn h4{
+.seemore-btn h5{
     color: var(--white-highlight--) !important;
 }
 

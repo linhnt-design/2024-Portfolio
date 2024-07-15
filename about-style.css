@@ -2,7 +2,11 @@ body{
     background-color: var(--white-creamy--) !important;
     width: 100vw;
     overflow-y: scroll;
-  }
+}
+
+ul li::marker{
+    color: var(--red-dark--);
+}
   
 #navbar{
     position: fixed;
@@ -10,53 +14,411 @@ body{
     background-color: var(--white-creamy--);
 }
 
+#navbar .nav-link h4{
+    color: var(--red-dark--) !important;
+}
+
+#navbar .nav-link.active h4{
+    color: var(--blue-dark--) !important;
+}
+
 #navbar .nav-link:hover h4{
     transform: rotate(-6deg);
 }
 
-.intro-video{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: -2;
-    filter: sepia(40%);
+.section{
+    width: 100%;
+    padding: 2vmin 0;
 }
 
-.section{
+.section.heading{
+    height: 80vh;
+    padding: 0;
+}
+
+.section.heading img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    filter: sepia(10%) opacity(90%);
+    -webkit-filter: sepia(10%) opacity(100%) brightness(30%);
+}
+
+.section.heading h1{
+    z-index: 1;
+    transform: translateY(-50vh);
+    color: var(--white-creamy--);
+    text-align: center;
+}
+
+.section.heading h1{
+    color: var(--white-creamy--);
+    font-size: 12rem;
+    text-align: center;
+    padding-right: 4%;
+}
+
+.section.background{
+    position: relative;
+    margin-top: 20vh;
+}
+
+.section.background{
+    padding: 8vmin 0;
+    background-color: var(--red-dark--);
+}
+
+.section.background .content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 5%;
+}
+
+.section.background .col-12.content .col-xl-6 p{
+    text-align: justify;
+    color: var(--white-creamy--);
+    line-height: 2;
+}
+
+.col-12.head{
+    padding: 4vmin 0;
+}
+
+.col-12.head h1{
+    text-align: center;
+    color: var(--red-dark--);
+}
+
+.section.edu{
+    padding: 4vmin 0;
+    padding-top: 8vmin;
+}
+
+.section.edu .col-12.content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 6%;
+}
+
+.section.edu .col-12.content{
     display: flex;
     align-items: center;
 }
 
-.section .col-xl-6 img{
+.section.edu .col-12.content .col-xl-6 img{
     width: 100%;
 }
 
-.section .col-xl-6 h1{
+.section.edu .col-12.content h3{
     color: var(--red-dark--);
-    font-size: 12rem !important;
-    text-align: left;
-    transform: translateY(14vh);
-    padding-left: 2vmin;
-    line-height: 0.9;
 }
 
-.section .col-xl-6 .content{
-    width: 50%;
-    transform: translateY(16vh);
-}
-
-.section .col-xl-6 .content h3{
-    padding: 2vmin;
+.section.edu .col-12.content h4{
     color: var(--red-dark--);
-    font-size: 1.75rem;
-    font-weight: 400;
 }
 
-.section .col-xl-6 .content p{
-    font-size: 1.2rem;
-    padding: 0 2vmin;
-    color: var(--blue-dark--) !important;
+.section.edu .col-12.content p{
+    color: var(--red-dark--);
 }
 
+.section.edu .col-xl-6 .achieve{
+    padding: 2vmin 0;
+}
+
+.section.skills{
+    padding: 4vmin 0;
+    margin: auto;
+    width: 100%;
+}
+
+.section.skills .col-12.content{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    gap: 3vw;
+    justify-content: center;
+
+}
+
+.section.skills .col-12.content .col-xl-6{
+    border-width: 2px;
+    border-style: solid;   
+    border-color: var(--red-dark--); 
+    padding: 4vmin;
+}
+
+.section.skills .col-12.content .col-xl-6 h3{
+    padding: 2vmin 0;
+    color: var(--red-dark--);
+}
+
+.section.skills .col-12.content .col-xl-6 p{
+    padding: 0.5vmin 0;
+    line-height: 1.5;
+    color: var(--red-dark--);
+}
+
+.section.skills .col-12.content .col-xl-6 ul{
+    width: 70%;
+    display: flex;
+    gap: 3vw;
+    margin: auto;
+    padding: 2vmin 0;
+    justify-content: space-between;
+}
+
+.section.skills .col-12.content .col-xl-6 ul li{
+    width: 10%;
+    list-style: none;
+}
+
+.section.skills .col-12.content .col-xl-6 ul li img{
+    width: 100%;
+    height: auto;
+}
+
+.section.cert{
+    display: block;
+}
+
+.section.cert .col-12.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.section.cert .col-12.content .col-xl-3{
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--red-dark--);
+    width: 15%;
+}
+
+.section.cert .col-12.content .col-xl-3 .row{
+    width: 100%;
+    margin: auto;
+}
+
+.section.cert .col-12.content .col-xl-3 .row .time h4{
+    text-align: center;
+    color: var(--red-dark--);
+}
+
+.section.cert .col-12.content .col-xl-3 .row .time h3{
+    text-align: center;
+    color: var(--red-dark--);
+    padding: 0.5vmin 0;
+
+}
+.section.cert .col-12.content .col-xl-3 .row .time p{
+    text-align: center;
+    color: var(--red-dark--);
+
+}
+.section.cert .col-12.content .col-xl-3 .row .achieve p{
+    text-align: center;
+    color: var(--red-dark--);
+    padding: 2vmin 0;
+
+}
+
+.section.cert .col-12.content .col-xl-3 .row{
+    padding: 2vmin 0;
+    min-height: 24vh;
+}
+
+.section.cert .col-12.content .col-xl-3 .row .time{
+    height: 10vh;
+}
+
+
+.section.cert .col-12.content .col-xl-3 img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    opacity: 90%;
+}
+
+.seemore-btn{
+    margin: auto;
+    padding: 12px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1.5px;
+    border-color: var(--red-dark--);
+}
+
+.seemore-btn h4{
+    font-size: 1.25rem !important;
+}
+
+
+/* small desktop */
+@media screen and (max-width: 1440px) {
+    h1{
+        font-size: 12vmin !important;
+    }
+
+    h4{
+        font-size: 14px !important;
+    }
+
+    .section.heading h1{
+        transform: translateY(-55vh);
+    }
+
+    .section.background .content{
+        width: 70%;
+        margin: auto;
+    }
+
+    .section.background .col-12.content .col-xl-6 p{
+        line-height: 1.8;
+    }
+    
+    .section.edu .col-12.content{
+        width: 80%;
+    }
+
+    .section.skills .col-12.content{
+        width: 80%;
+    }
+
+    .section.cert .col-12.content{
+        width: 90%;
+    }
+
+    .section.cert .col-12.content .col-lg-4{
+        width: 30%;
+    }
+    
+    .section.cert .col-12.content .col-lg-4 .row .time{
+        height: 14vh;
+    }
+    .section.cert .col-12.content .col-xl-3 .row .time h3{
+        font-size: 1.5rem !important;
+    }
+}
+
+/* tablet screen size */
+@media screen and (max-width: 1024px), (device-width:1024px) {
+
+    h1{
+        font-size: 12vmin !important;
+    }
+
+    h4{
+        font-size: 14px !important;
+    }
+
+    .section.background .content{
+        flex-wrap: wrap;
+    }
+
+    .section.background .col-12.content .col-md-12.viet-text{
+        padding: 2vmin 0;
+    }
+
+    .section.edu .col-12.content{
+        flex-wrap: wrap;
+    }
+
+    .section.edu .col-12.content .col-md-12{
+        padding: 2vmin 0;
+    }
+
+    .section.edu .col-12.content .col-md-12 .row .time h4{
+        text-align: center;
+    }
+    .section.edu .col-12.content .col-md-12 .row .time h3{
+        text-align: center;
+    }
+    .section.edu .col-12.content .col-md-12 .row .time p{
+        text-align: center;
+    }
+
+    .section.edu .col-12.content .col-md-12 .row .achieve ul li{
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .section.edu .col-12.content .col-md-12 .row .achieve p{
+        text-align: center;
+    }
+    
+    .section.skills{
+        padding: 0;
+    }
+
+    .section.skills .col-12.head{
+        padding: 4vmin 0;
+    }
+
+    .section.skills .col-12.content{
+        flex-wrap: wrap;
+    }
+
+    .section.cert .col-12.content .col-md-6{
+        width: 40%;
+    }    
+}
+
+/* mobile screen size */
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 10vmin !important;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .section.heading h1{
+        padding: 0;
+    }
+    .section.skills .col-12.content .col-sm-12{
+        border-width: 1px;
+    }
+
+    .section.skills .col-12.content .col-sm-12 ul{
+        padding: 1vmin 0;
+        gap: 1vw;
+    }
+    .section.skills .col-12.content .col-sm-12 ul li{
+        width: 14%;
+    }
+
+    .section.skills .col-12.content .col-sm-12 p span{
+        font-weight: 500 !important;
+    }
+
+    .section.cert{
+        padding: 8vmin 0;
+    }
+    
+    .section.cert .col-12.content{
+        gap: 3vmin;
+    }
+
+    .section.cert .col-12.content .col-sm-12{
+        width: 90%;
+        border-width: 1px;
+    }
+
+
+
+
+
+
+}

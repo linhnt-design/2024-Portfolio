@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="about-style.css">
 
     <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -18,7 +24,6 @@
 </head>
 
 <body>
-    <video class="intro-video" src="video/RENDER.mp4" autoplay loop muted plays-inline></video>
     
     <div id="navbar">
         <ul>
@@ -28,21 +33,190 @@
         </ul>
     </div>
 
-    <div class="section">
-        <div class="col-xl-6">
-            <img src="img/about/profilepic.png" alt="">
-        </div>
-        <div class="col-xl-6">
-            <h1><span style="color: var(--blue-dark--); font-style: italic; font-family: Playfair Display, serif">it's</span><br>LINHNT</h1>
-            <div class="content">
-                <h3>A designer with a passion for <span style="color: var(--blue-dark--); font-size: larger; font-style: italic;">exploration</span> and a drive to create <span style="color: var(--blue-dark--); font-size: larger; font-style: italic;">beautiful, functional</span> solutions.</h3>
-                <p>I thrive in environments that encourage learning new things, and I'm always eager to experiment with different design styles to find the perfect fit for each project. My goal is to strike a balance between aesthetics and usability, ensuring my designs are as pleasing to the eye as they are practical in use. Beyond the technical skills, I believe a positive attitude and a disciplined approach are key to success. Let's work together and see what we can create!</p>    
+    <div class="section heading">
+            <img src="img/about/profilepic.png" alt="profile-picture">
+            <h1>let's get to know <span style=" font-family: Playfair Display, serif; font-style: italic; color: var(--white-highlight--); font-size: larger;">me!</span></h1>
+    </div>
+
+
+    <div class="section background">
+        <div class="col-12 content">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 .eng-text">
+                <p>After deciding to take a turn in my career path and to pursue graphic design 2 years ago, I've developed a great passion for creating visually appealing and practical solutions for brands. I love to explore the world of typography and colors to create vibrant and youthful branding designs. In the UX/UI area, my design style leans more to the simple and clean side. My journey at Arena Multimedia has enriched my design knowledge and soft skills such as communications, idea pitching, and teamwork.  Beyond creativity, I value a professional attitude and a disciplined approach to maintain efficient and successful collaborations.</p>
             </div>
-            <div class="tags">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 viet-text">
+                <p style="font-style: italic;">Sau khi quyết định rẽ hướng sự nghiệp sang lĩnh vực thiết kế vào 2 năm trước, mình đã tìm được đam mê trong việc tạo ra những giải pháp thị giác vừa thẩm mỹ vừa thực tiễn cho những vấn đề của các nhãn hàng. Trong khoảng thời gian theo học tại Arena Multimedia, bên cạnh những kiến thức về thiết kế, mình được trau dồi về kĩ năng mềm như cách trình bày ý tưởng, làm việc nhóm, và tác phong cẩn thận khi thiết kế. Mình tin rằng một thái độ chuyên nghiệp và tính nguyên tắc trong công việc sẽ giúp mình đi xa hơn trên con đường thiết kế.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section edu">
+        <div class="col-12 head">
+            <h1>EDUCATION</h1>
+        </div>
+        <div class="col-12 content">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <img src="img/about/kimono-bw.png" alt="">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">10/2022 - 04/2024</h4>
+                        <h3>DIPLOMA IN MULTIMEDIA</h3>
+                        <p style="font-style: italic;">Arena Multimedia, Vietnam</p>
+                    </div>
+                    <div class="achieve">
+                        <ul>
+                            <li>
+                                <p>Graded <span style="font-size: larger; color: var(--blue-dark--); font-weight: bold;">81/100</span> for the Graphic Design Seminar Project</p>
+                            </li>
+                            <li>
+                                <p>Graded <span style="font-size: larger; color: var(--blue-dark--); font-weight: bold;">80/100</span> for the Website Design Seminar Project</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">04/2018 - 04/2022</h4>
+                        <h3>BACHELOR OF GLOBAL INNOVATION STUDIES</h3>
+                        <p style="font-style: italic;">Toyo University, Japan</p>
+                    </div>
+                    <div class="achieve">
+                        <ul>
+                            <li>
+                                <p>Graduated with a GPA of <span style="font-size: larger; color: var(--blue-dark--); font-weight: bold;">4.15/4.5</span>. View certificate <a href="img/about/Nguyen Tuyet Linh_GPA.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                            </li>
+                            <li>
+                                <p>Full-scholarship recipient for 4 years.</p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="section skills">
+        <div class="col-12 head">
+            <h1>SKILLS & TOOLS</h1>
+        </div>
+
+        <div class="col-12 content">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <h3 style="text-align: center;">Graphic Design Skills</h3>
+                <p style="text-align: center;">I work well with these tools to create <span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;">aesthetic social posts, logo, packaging, and other media products</span> . I love telling inspiring story through lively and playful design with <span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;">bold typography</span> and<span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;"> vibrant color palletes</span>.</p>
                 
+                <ul>
+                    <li><img src="svg/icon/PTS.svg" alt=""></li>
+                    <li><img src="svg/icon/AI.svg" alt=""></li>
+                    <li><img src="svg/icon/ID.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <h3 style="text-align: center;">Website Design Skills</h3>
+                <p style="text-align: center;">I have experience in conducting <span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;">market and user research</span> to create <span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;">user-centered UX</span> and I work well with these tools to design <span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;">aesthetic</span> and <span style="font-size: larger; font-weight: bolder; color: var(--blue-dark--); font-style: italic;">practical UI</span> for websites and mobile apps.</p>
+                
+                <ul>
+                    <li><img src="svg/icon/figma.svg" alt=""></li>
+                    <li><img src="svg/icon/html.svg" alt=""></li>
+                    <li><img src="svg/icon/css.svg" alt=""></li>
+                    <li><img src="svg/icon/bootstrap.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section cert">
+        <div class="col-12 head">
+            <h1>CERTIFICATES & REWARDS</h1>
+        </div>
+
+        <div class="col-12 content">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/about/jellyfish2-bw.png" alt="" style="object-position: bottom;">
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">04/2018 - 04/2022</h4>
+                        <h3>Toyo Top Global Scholarship Type A</h3>
+                        <p style="font-style: italic;">Toyo University, Japan</p>
+                    </div>
+                    <div class="achieve">
+                        <p>Full-scholarship covers tuition fee and monthly stipend for 4 years.</p>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <img style="object-position: top;" src="img/about/jellyfish3.png" alt="">
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">10/2021</h4>
+                        <h3>IELTS Academic</h3>
+                        <p style="font-style: italic;">JP500, Japan</p>
+                    </div>
+                    <div class="achieve">
+                        <p>Overall band score: <span style="font-weight: bolder; font-size: larger;color: var(--blue-dark--);">7.5</span>.</p>
+                    </div>
+                    <a class="btn" href="img/about/Nguyen Tuyet Linh_IELTS.pdf">
+                        <button class="seemore-btn"><h5>View certificate</h5></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/about/jellyfish4.png" alt="">
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">05/2022</h4>
+                        <h3>The Fundamentals of Digital Marketing</h3>
+                        <p style="font-style: italic;">Google, Online</p>
+                    </div>
+                    <div class="achieve">
+                        <p>Successful completion.</p>
+                    </div>
+                    <a class="btn" href="img/about/Nguyen Tuyet Linh_Digital Marketing Cert.pdf">
+                        <button class="seemore-btn"><h5>View certificate</h5></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/about/jellyfish-bw.png" alt="">
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">07/2022</h4>
+                        <h3>Work Smarter with<br>Microsoft Excel</h3>
+                        <p style="font-style: italic;">Coursera, Online</p>
+                    </div>
+                    <div class="achieve">
+                        <p>Grade achieved: <span style="font-weight: bolder; font-size: larger; color: var(--blue-dark--);">89,58%</span>.</p>
+                    </div>
+                    <a class="btn" href="img/about/Nguyen Tuyet Linh_Excel Cert.pdf">
+                        <button class="seemore-btn"><h5>View certificate</h5></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/about/jellyfish3.png" alt="" style="object-position: bottom;">
+                <div class="row">
+                    <div class="time">
+                        <h4 style="color: var(--blue-dark--) !important;">04/2024</h4>
+                        <h3>Google UX Design Professional Certificate</h3>
+                        <p style="font-style: italic;">Coursera, Online</p>
+                    </div>
+                    <div class="achieve">
+                        <p><span style="font-weight: bolder; font-size: larger;color: var(--blue-dark--);">3/7</span> modules completed.</p>
+                    </div>
+                    <a class="btn" href="img/about/Nguyen Tuyet Linh_UX.pdf">
+                        <button class="seemore-btn"><h5>View certificate</h5></button>
+                    </a>
+                </div>
             </div>
             
         </div>
     </div>
+    
+    
+    </div>
+    
 </body>
 </html>

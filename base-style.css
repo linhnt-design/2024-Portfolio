@@ -4,7 +4,7 @@
     --blue-dark--: rgb(47, 50, 56);
     --red-dark--: rgb(144, 41, 60);
     --white-highlight--: rgb(250, 248, 245);
-    --white-creamy--: rgba(249, 230, 204, 0.4)
+    --white-creamy--: rgba(249, 230, 204, 0.8)
 }
 
 a{
@@ -43,6 +43,14 @@ h3{
 h4{
     font-family: "Playfair Display", serif;
     font-weight: 400;
+    margin: 0 !important;
+    color: var(--red-dark--) !important;
+}
+
+h5{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 15px !important;
     margin: 0 !important;
     color: var(--red-dark--) !important;
 }
