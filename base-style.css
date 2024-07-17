@@ -2,9 +2,9 @@
 :root{
     --blue-medium--: rgb(125, 148, 196);
     --blue-dark--: rgb(47, 50, 56);
-    --red-dark--: rgb(144, 41, 60);
+    --red-dark--: rgb(141, 14, 37);
     --white-highlight--: rgb(250, 248, 245);
-    --white-creamy--: rgba(249, 230, 204, 0.8)
+    --white-creamy--: rgba(249, 244, 220, 0.8)
 }
 
 a{

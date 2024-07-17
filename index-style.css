@@ -28,7 +28,7 @@ h4{
     min-width: 100vw;
     min-height: 100vh;
     z-index: -2;
-    filter: sepia(40%);
+    filter: sepia(50%);
 }
 
 header{
@@ -317,7 +317,7 @@ header{
 }
 
 .section2{
-    background-color: var(--red-dark--);
+    background-color: var(--white-creamy--);
     animation: zoomshow ease-out both;
     animation-timeline: view();
     animation-range: cover 1% cover 30%;
@@ -325,7 +325,7 @@ header{
 }
 
 .section.section2 .quote-section2 h1, .section.section2 .quote-section2 h4{
-    color: var(--white-highlight--) !important;
+    color: var(--red-dark--) !important;
 }
 
 .section.section2 .quote-section2 h3{
@@ -333,7 +333,7 @@ header{
     text-align: center;
     padding-top: 2vh;
     line-height: 1.5;
-    color: var(--white-highlight--);
+    color: var(--red-dark--);
 }
 
 .section.section2 .quote-section2 h4{

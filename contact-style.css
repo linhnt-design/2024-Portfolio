@@ -1,0 +1,27 @@
+body{
+    background-color: var(--white-creamy--) !important;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+ul li::marker{
+    color: var(--red-dark--);
+}
+  
+#navbar{
+    position: fixed;
+    z-index: 2;
+    background-color: var(--white-creamy--);
+}
+
+#navbar .nav-link h4{
+    color: var(--red-dark--) !important;
+}
+
+#navbar .nav-link.active h4{
+    color: var(--blue-dark--) !important;
+}
+
+#navbar .nav-link:hover h4{
+    transform: rotate(-6deg);
+}
