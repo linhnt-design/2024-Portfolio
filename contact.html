@@ -6,7 +6,7 @@
     <title>Linh's Portfolio 2024</title>
 
     <link rel="stylesheet" href="base-style.css">
-    <link rel="stylesheet" href="about-style.css">
+    <link rel="stylesheet" href="contact-style.css">
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <video class="intro-video" src="video/RENDER.mp4" autoplay loop muted plays-inline></video>
     <div id="navbar">
         <ul>
             <li><a class="nav-link " href="index.html"><h4>WORK</h4></a></li>
@@ -33,13 +33,34 @@
     </div>
 
     <div class="section">
-        <div class="col-xl-6">
-            <img src="img/contact/profile-pic.png" alt="">
+        <div class="col-12 head">
+            <h1>LET'S GET IN TOUCH</h1>
         </div>
-        <div class="col-xl-6">
+        <div class="col-12 content">
+            <h3>Currently <span style="color: var(--blue-dark--); font-style: italic; font-size: larger; font-family: Playfair Display, serif;">open</span> to any design <span style="color: var(--blue-dark--); font-style: italic; font-size: larger; font-family: Playfair Display, serif;">positions</span> and project <span style="color: var(--blue-dark--); font-style: italic; font-size: larger; font-family: Playfair Display, serif;">opportunities</span>. Leave me a message if you are interested in collaborating!</h3>
+            <div class="button">
+                <a href="mailto:tuyetlinhnguyen1605@gmail.com" target="_blank">
+                    <button class="seemore-btn"><h4>Send me a message!</h4></button>
+                </a>
+            </div>
             
+            <hr style="color: var(--red-dark--);"><h4>or <br>Check out my social accounts!</h4>
+            <ul>
+                <li><a href="https://www.behance.net/nguyentuyetlinh" target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Visit my Behance account"><img src="svg/icon/behance.svg" alt=""></a></li>
+
+                <li><a href="https://www.linkedin.com/in/tuyet-linh-nguyen-577429166/" target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Visit my LinkedIn account"><img src="svg/icon/linkedin.svg" alt=""></a></li>
+                
+            </ul>
         </div>
     </div>
 
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>

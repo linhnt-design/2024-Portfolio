@@ -4,13 +4,22 @@ body{
     overflow-y: scroll;
 }
 
+.intro-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -2;
+    filter: sepia(50%);
+}
+
 ul li::marker{
     color: var(--red-dark--);
 }
   
 #navbar{
-    position: fixed;
-    z-index: 2;
+    position: relative !important;
     background-color: var(--white-creamy--);
 }
 
@@ -24,4 +33,114 @@ ul li::marker{
 
 #navbar .nav-link:hover h4{
     transform: rotate(-6deg);
+}
+
+.seemore-btn{
+    margin: auto;
+    padding: 12px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1.5px;
+    border-color: var(--red-dark--);
+}
+
+.seemore-btn h4{
+    font-size: 1.25rem !important;
+}
+
+.section{
+    width: 100%;
+    position: relative;
+    padding: 8vmin 0;
+    transform: translateY(12vh);
+}
+
+.section .col-12.head{
+    padding: 2vmin 0;
+}
+
+.section .col-12.head h1{
+    color: var(--red-dark--);
+}
+
+.section .col-12.content{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+
+.section .col-12.content h3{
+    color: var(--red-dark--);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+
+.section .col-12.content h4{
+    color: var(--red-dark--);
+    text-align: center;
+    line-height: 1.5;
+    padding: 2vmin 0;
+    font-weight: 400;
+}
+
+.col-12.content .button{
+    width: fit-content;
+    margin: auto;
+    padding: 3vmin 0;
+}
+
+.button a .seemore-btn{
+    transition: 150ms
+}
+
+.button a .seemore-btn h4{
+    transition: 150ms
+}
+
+.button:hover a .seemore-btn{
+    background-color: var(--red-dark--);
+    rotate: -3deg;
+    transition: 150ms;
+}
+.button:hover a .seemore-btn h4{
+    color: var(--white-highlight--) !important;
+    transition: 150ms;
+}
+
+.button h4{
+    padding: 0 !important;
+}
+
+.col-12.content ul{
+    list-style: none;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    gap: 2vw;
+    padding-left: 0;
+}
+
+.col-12.content ul li{
+    padding: 1vmin;
+    transition: 150ms;
+}
+
+.col-12.content ul li a{
+    height: fit-content;
+}
+
+.col-12.content ul li:hover{
+    rotate: -5deg;
+    transition: 150ms;
+}
+
+.col-12.content img{
+    width: 150%;
+}
+
+.custom-tooltip{
+    background-color: var(--red-dark--) !important;
 }
