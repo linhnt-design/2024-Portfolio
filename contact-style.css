@@ -144,3 +144,47 @@ ul li::marker{
 .custom-tooltip{
     background-color: var(--red-dark--) !important;
 }
+
+/* tablet screen size */
+@media screen and (max-width: 1024px), (device-width:1024px) {
+    h3{
+        line-height: 1.75;
+        font-size: 1.25rem !important;
+    }
+
+    .section .col-12.content{
+        width: 70%;
+    }
+    .seemore-btn{
+        border-width: 1px;
+        margin-top: 3vmin;
+    }
+
+    .seemore-btn h4{
+        font-size: 14px !important;
+    }
+
+    .col-12.content img{
+        width: 100%;
+    }
+}
+
+/* mobile screen size */
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 20vmin !important;
+        line-height: 1 !important;
+    }
+
+    h3{
+        font-size: 14px !important;
+    }
+
+    h4{
+        font-size: 12px !important;
+    }
+
+    .section{
+        padding: 4vmin 0;
+    }
+}
