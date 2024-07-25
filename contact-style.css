@@ -145,6 +145,33 @@ ul li::marker{
     background-color: var(--red-dark--) !important;
 }
 
+/* small desktop size */
+@media screen and (max-width: 1440px){
+    h1{
+        font-size: 14vmin !important;
+    }
+
+    h3{
+        font-size: 1.5rem !important;
+    }
+    
+    h4{
+        font-size: 1rem !important;
+    }
+
+    #navbar{
+        border-width: 1.5px;
+    }
+
+    .section .col-12.content{
+        width: 70%;
+    }
+
+    .seemore-btn h4{
+        font-size: 1rem !important;
+    }
+}
+
 /* tablet screen size */
 @media screen and (max-width: 1024px), (device-width:1024px) {
     h3{

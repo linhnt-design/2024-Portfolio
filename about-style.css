@@ -286,7 +286,7 @@ ul li::marker{
     }
 
     h4{
-        font-size: 14px !important;
+        font-size: 1rem !important;
     }
 
     .section.heading h1{
@@ -323,6 +323,14 @@ ul li::marker{
     }
     .section.cert .col-12.content .col-lg-3 .row .time h3{
         font-size: 1.5rem !important;
+    }
+
+    .section.edu .col-12.content .col-lg-6 .row{
+        border-bottom-width: 1px;
+    }
+
+    .section.cert .col-12.content .col-lg-4 .row{
+        border-width: 1px !important;
     }
 }
 

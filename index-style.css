@@ -417,8 +417,12 @@ header{
         font-size: 14vmin !important;
     }
 
+    h3{
+        font-size: 1.5rem !important;
+    }
+    
     h4{
-        font-size: 3vmin !important;
+        font-size: 1rem !important;
     }
 
     #navbar{
@@ -577,6 +581,10 @@ header{
         height: fit-content;
     }
 
+    span{
+        font-size: smaller;
+    }
+
     .intro-sentence{
         width: 90vw;
         margin-bottom: 2vh;
@@ -695,8 +703,26 @@ header{
         opacity: 1;
     }
 
-    
+    .section.section2{
+        width: 100%;
+    }
 
+    .quote-section2{
+        margin: auto;
+    }
+
+    .quote-section2 h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .quote-section2 h3{
+        font-size: 16px !important;
+    }
+
+    .quote-section2 h4{
+        font-size: 14px !important;
+    }
 
 
 
