@@ -253,7 +253,7 @@ ul li::marker{
 }
 
 .section.cert .col-12.content .col-xl-3 .row .time{
-    height: 10vh;
+    min-height: 10vh;
 }
 
 
