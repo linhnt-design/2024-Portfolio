@@ -318,10 +318,6 @@ header{
 
 .section2{
     background-color: var(--white-creamy--);
-    animation: zoomshow ease-out both;
-    animation-timeline: view();
-    animation-range: cover 1% cover 30%;
-
 }
 
 .section.section2 .quote-section2 h1, .section.section2 .quote-section2 h4{
