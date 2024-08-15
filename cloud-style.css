@@ -119,6 +119,7 @@ img{
 
 .col-xl-6 .row.text{
     display: block;
+    width: 80%;
 }
 
 .col-xl-6 .row.icon img{
